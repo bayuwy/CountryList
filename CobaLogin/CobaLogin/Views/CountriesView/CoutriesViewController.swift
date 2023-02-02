@@ -21,8 +21,8 @@ class CoutriesViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-//        countriesVM.fetch()
-        fetch()
+        countriesVM.fetch()
+//        fetch()
     }
     
     func setup() {
@@ -53,20 +53,20 @@ class CoutriesViewController: UIViewController, UIScrollViewDelegate {
 extension CoutriesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return countries.count
-//        return countriesVM.numberOrRows()
+//        return countries.count
+        return countriesVM.numberOrRows()
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "countriesCellId", for: indexPath) as! CountriesViewCell
         
-        let index = countries[indexPath.row]
-        cell.countryName.text = index.name?.common ?? ""
-        cell.countryImageView.kf.setImage(with: URL(string: index.flags.png!))
+//        let index = countries[indexPath.row]
+//        cell.countryName.text = index.name?.common ?? ""
+//        cell.countryImageView.kf.setImage(with: URL(string: index.flags.png!))
         
-//        let index = indexPath.row
-//        cell.countryName.text = countriesVM.countryName(at: index)
-//        cell.countryImageView.kf.setImage(with: URL(string: countriesVM.countryFlag(at: index)!))
+        let index = indexPath.row
+        cell.countryName.text = countriesVM.countryName(at: index)
+        cell.countryImageView.kf.setImage(with: URL(string: countriesVM.countryFlag(at: index)!))
         return cell
     }
 }
