@@ -19,44 +19,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5PK-cD-Tq7">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="countriesCellId" rowHeight="129" id="ADG-HZ-bHg" customClass="CountriesViewCell" customModule="CobaLogin" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="129"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ADG-HZ-bHg" id="NbE-4W-RFV">
-                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="129"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZQH-ed-gQT">
-                                                    <rect key="frame" x="20" y="21.333333333333343" width="120" height="87"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="120" id="BNz-xk-yGT"/>
-                                                        <constraint firstAttribute="height" constant="80" id="QUl-EG-NtT"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indonesia" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcn-Cr-uqq">
-                                                    <rect key="frame" x="148" y="50.333333333333336" width="164.66666666666663" height="28.666666666666664"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="wcn-Cr-uqq" firstAttribute="leading" secondItem="ZQH-ed-gQT" secondAttribute="trailing" constant="8" symbolic="YES" id="0sv-Rb-bfV"/>
-                                                <constraint firstAttribute="bottom" secondItem="ZQH-ed-gQT" secondAttribute="bottom" priority="750" constant="20" id="2bi-Kb-oBP"/>
-                                                <constraint firstItem="ZQH-ed-gQT" firstAttribute="top" secondItem="NbE-4W-RFV" secondAttribute="top" constant="20" id="8Qi-vf-s5z"/>
-                                                <constraint firstItem="ZQH-ed-gQT" firstAttribute="leading" secondItem="NbE-4W-RFV" secondAttribute="leading" constant="20" id="RpB-ml-Shg"/>
-                                                <constraint firstItem="wcn-Cr-uqq" firstAttribute="centerY" secondItem="ZQH-ed-gQT" secondAttribute="centerY" id="SeS-GW-crN"/>
-                                                <constraint firstItem="ZQH-ed-gQT" firstAttribute="centerY" secondItem="NbE-4W-RFV" secondAttribute="centerY" id="Ta9-jW-RZa"/>
-                                                <constraint firstAttribute="trailing" secondItem="wcn-Cr-uqq" secondAttribute="trailing" constant="50" id="zaU-NI-zd1"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="countryImageView" destination="ZQH-ed-gQT" id="7DN-Wb-e0A"/>
-                                            <outlet property="countryName" destination="wcn-Cr-uqq" id="05V-Gs-25N"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -100,7 +62,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="flag.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

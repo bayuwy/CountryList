@@ -8,16 +8,17 @@
 import Foundation
 
 class CountriesViewModel {
-    private var countries: [Countries] = []
+    var countries: [Countries] = []
     
-    func fetch() {
+    func fetch(completion: @escaping () -> ()) {
         CountriesAPI.fetchData { countries in
             self.countries = countries
             dump(self.countries)
             DispatchQueue.main.async
             {
-                self.countries.sort(by: {$0.name!.common < $1.name!.common})
+                self.countries.sort(by: {$0.name?.common ?? "" < $1.name?.common ?? ""})
             }
+            completion()
         }
     }
     
@@ -26,9 +27,30 @@ class CountriesViewModel {
     }
     
     func countryName(at index: Int) -> String? {
-        return self.countries[index].name?.common ?? ""
+        return self.countries[index].name?.common
     }
+    
     func countryFlag(at index: Int) -> String? {
         return self.countries[index].flags.png!
     }
+    
+//    func countryCapital(at index: Int) -> String? {
+//        return self.countries[index].capital?.last ?? ""
+//    }
+//    
+//    func countryLanguage(at index: Int) -> Any {
+//        return self.countries[index].languages ?? [:]
+//    }
+//    
+//    func countryRegion(at index: Int) -> String? {
+//        return self.countries[index].region 
+//    }
+//    
+//    func countrySubRegion(at index: Int) -> String? {
+//        return self.countries[index].subregion 
+//    }
+//    
+//    func countryPopulation(at index: Int) -> Int? {
+//        return self.countries[index].population 
+//    }
 }

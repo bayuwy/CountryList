@@ -9,47 +9,47 @@
     </dependencies>
     <scenes>
         <!--Detail Country View Controller-->
-        <scene sceneID="s0d-6b-0kx">
+        <scene sceneID="Tf2-ar-bzo">
             <objects>
-                <viewController storyboardIdentifier="detailCountry" id="Y6W-OH-hqX" customClass="DetailCountryViewController" customModule="CobaLogin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                <viewController storyboardIdentifier="detailCountry" id="8Cr-2h-98t" customClass="DetailCountryViewController" customModule="CobaLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b4B-2N-aCG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fYK-HF-mcn">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7Jq-5B-1Vf">
                                 <rect key="frame" x="19.999999999999993" y="327.66666666666669" width="104.33333333333331" height="197.00000000000006"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Negara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfb-6a-OvR">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Negara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fk-ul-Eyi">
                                         <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ibu Kota" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFd-Le-zHk">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ibu Kota" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ako-g8-YL8">
                                         <rect key="frame" x="0.0" y="35.333333333333314" width="104.33333333333333" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bahasa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUL-Y0-7W1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bahasa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGL-lT-l7t">
                                         <rect key="frame" x="0.0" y="70.666666666666629" width="104.33333333333333" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wilayah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgF-K2-RMb">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wilayah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="830-7Q-6JJ">
                                         <rect key="frame" x="0.0" y="106" width="104.33333333333333" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub Wilayah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2s-AA-qq9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub Wilayah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtD-uQ-zKo">
                                         <rect key="frame" x="0.0" y="141.33333333333331" width="104.33333333333333" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Populasi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXl-0U-h8M">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Populasi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUJ-Be-zi5">
                                         <rect key="frame" x="0.0" y="176.66666666666663" width="104.33333333333333" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -57,40 +57,40 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cZW-cK-XHU">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3KS-c5-v8y">
                                 <rect key="frame" x="144.33333333333334" y="327.66666666666669" width="220.00000000000003" height="197.00000000000006"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=": Nama Negara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1a-8C-beW">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=": Nama Negara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUJ-lo-FNG">
                                         <rect key="frame" x="0.0" y="0.0" width="220" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=": Ibu Kota" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BU3-3o-WQr">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=": Ibu Kota" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VO-Ur-5iE">
                                         <rect key="frame" x="0.0" y="35.333333333333314" width="220" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text=": Bahasa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eY-Mp-D8r">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text=": Bahasa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKB-Pc-scW">
                                         <rect key="frame" x="0.0" y="70.666666666666629" width="220" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=": Wilayah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvK-sK-ezJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=": Wilayah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kel-Hc-Kwr">
                                         <rect key="frame" x="0.0" y="106" width="220" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=": Sub Wilayah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDc-1K-hQ1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=": Sub Wilayah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vv8-HL-SQf">
                                         <rect key="frame" x="0.0" y="141.33333333333331" width="220" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=": Populasi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufo-bu-Ou4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=": Populasi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3w-kd-sMs">
                                         <rect key="frame" x="0.0" y="176.66666666666663" width="220" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -98,31 +98,42 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="8tJ-5L-ejP"/>
+                                    <constraint firstAttribute="width" constant="220" id="cMJ-Xy-tzV"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sOG-Q2-v5b">
+                                <rect key="frame" x="136.66666666666666" y="167.66666666666666" width="119.99999999999997" height="119.99999999999997"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="BKm-dh-fRx"/>
+                                    <constraint firstAttribute="height" constant="120" id="mZU-fU-qml"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <viewLayoutGuide key="safeArea" id="Gp2-oU-IDB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="cZW-cK-XHU" firstAttribute="top" secondItem="fYK-HF-mcn" secondAttribute="top" id="a6h-GA-NSh"/>
-                            <constraint firstItem="fYK-HF-mcn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ccA-A5-6dY"/>
-                            <constraint firstItem="cZW-cK-XHU" firstAttribute="leading" secondItem="fYK-HF-mcn" secondAttribute="trailing" constant="20" id="sAV-DQ-N6F"/>
-                            <constraint firstItem="fYK-HF-mcn" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="sIe-wc-I6a"/>
+                            <constraint firstItem="3KS-c5-v8y" firstAttribute="top" secondItem="7Jq-5B-1Vf" secondAttribute="top" id="Fbx-mS-aOI"/>
+                            <constraint firstItem="7Jq-5B-1Vf" firstAttribute="centerY" secondItem="b4B-2N-aCG" secondAttribute="centerY" id="JB8-b8-UF4"/>
+                            <constraint firstItem="3KS-c5-v8y" firstAttribute="leading" secondItem="7Jq-5B-1Vf" secondAttribute="trailing" constant="20" id="JIV-UE-BlW"/>
+                            <constraint firstItem="7Jq-5B-1Vf" firstAttribute="top" secondItem="sOG-Q2-v5b" secondAttribute="bottom" constant="40" id="WAc-c9-5Cr"/>
+                            <constraint firstItem="sOG-Q2-v5b" firstAttribute="centerX" secondItem="b4B-2N-aCG" secondAttribute="centerX" id="tWY-Nm-9OO"/>
+                            <constraint firstItem="7Jq-5B-1Vf" firstAttribute="leading" secondItem="Gp2-oU-IDB" secondAttribute="leading" constant="20" id="tcE-EK-a6a"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fWw-A1-1nP"/>
                     <connections>
-                        <outlet property="capitalCountryLabel" destination="BU3-3o-WQr" id="BZj-ix-Oce"/>
-                        <outlet property="langCountryLabel" destination="1eY-Mp-D8r" id="ddt-TI-doC"/>
-                        <outlet property="nameCountryLabel" destination="s1a-8C-beW" id="cSl-ko-a04"/>
-                        <outlet property="populationCountryLabel" destination="ufo-bu-Ou4" id="IjW-JE-PGg"/>
-                        <outlet property="regionCountryLabel" destination="tvK-sK-ezJ" id="zgS-aU-kWr"/>
-                        <outlet property="subRegionCountryLabel" destination="MDc-1K-hQ1" id="KXe-hJ-Mlb"/>
+                        <outlet property="artCountry" destination="sOG-Q2-v5b" id="KKm-Es-T64"/>
+                        <outlet property="capitalCountryLabel" destination="4VO-Ur-5iE" id="edR-aH-bXL"/>
+                        <outlet property="langCountryLabel" destination="lKB-Pc-scW" id="faZ-T2-MZU"/>
+                        <outlet property="nameCountryLabel" destination="jUJ-lo-FNG" id="Izj-bf-hji"/>
+                        <outlet property="populationCountryLabel" destination="L3w-kd-sMs" id="e8u-V7-CcJ"/>
+                        <outlet property="regionCountryLabel" destination="Kel-Hc-Kwr" id="hIB-FG-Ump"/>
+                        <outlet property="subRegionCountryLabel" destination="vv8-HL-SQf" id="5lG-5V-gbm"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctK-cy-tHl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="44" y="-2"/>
+            <point key="canvasLocation" x="2858.7786259541986" y="-44.366197183098592"/>
         </scene>
     </scenes>
     <resources>

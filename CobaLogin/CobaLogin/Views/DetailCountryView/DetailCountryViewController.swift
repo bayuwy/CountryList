@@ -7,9 +7,11 @@
 
 import UIKit
 import Foundation
+import Kingfisher
 
 class DetailCountryViewController: UIViewController {
 
+    @IBOutlet weak var artCountry: UIImageView!
     @IBOutlet weak var nameCountryLabel: UILabel!
     @IBOutlet weak var capitalCountryLabel: UILabel!
     @IBOutlet weak var langCountryLabel: UILabel!
@@ -17,27 +19,23 @@ class DetailCountryViewController: UIViewController {
     @IBOutlet weak var subRegionCountryLabel: UILabel!
     @IBOutlet weak var populationCountryLabel: UILabel!
     
-    var nameCountry = ""
-    var capitalCountry = ""
-    var langCountry = ""
-    var regionCountry = ""
-    var subRegionCountry = ""
-    var populationCountry = ""
+    var selectedCountry: Countries?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setup()
         // Do any additional setup after loading the view.
+        
+        setupDetail()
     }
     
-    func setup(){
-        nameCountryLabel.text = nameCountry
-        capitalCountryLabel.text = capitalCountry
-        langCountryLabel.text = langCountry
-        regionCountryLabel.text = regionCountry
-        subRegionCountryLabel.text = subRegionCountry
-        populationCountryLabel.text = populationCountry
-    }
+    func setupDetail(){
+        artCountry.kf.setImage(with: URL(string: selectedCountry?.coatOfArms.png ?? ""))
+        nameCountryLabel.text = ": \(selectedCountry?.name?.common ?? "")"
+        capitalCountryLabel.text = ": \(selectedCountry?.capital?.last ?? "")"
+        langCountryLabel.text = ": \(selectedCountry?.languages ?? [:])"
+        regionCountryLabel.text = ": \(selectedCountry?.region ?? "" )"
+        subRegionCountryLabel.text = ": \(selectedCountry?.subregion ?? "")"
+        populationCountryLabel.text = ": \(selectedCountry?.population ?? 0 )"
+}
 
 }
