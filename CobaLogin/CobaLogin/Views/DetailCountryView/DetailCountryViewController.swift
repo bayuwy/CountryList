@@ -32,10 +32,13 @@ class DetailCountryViewController: UIViewController {
         artCountry.kf.setImage(with: URL(string: selectedCountry?.coatOfArms.png ?? ""))
         nameCountryLabel.text = ": \(selectedCountry?.name?.common ?? "")"
         capitalCountryLabel.text = ": \(selectedCountry?.capital?.last ?? "")"
-        langCountryLabel.text = ": \(selectedCountry?.languages ?? [:])"
+        langCountryLabel.text = ": \(selectedCountry?.languages?.compactMap({ $0.value }).joined(separator: ", ") ?? "")"
         regionCountryLabel.text = ": \(selectedCountry?.region ?? "" )"
         subRegionCountryLabel.text = ": \(selectedCountry?.subregion ?? "")"
         populationCountryLabel.text = ": \(selectedCountry?.population ?? 0 )"
-}
-
+        
+//        let data: [String: String] = ["id": "Bahasa Indonesia", "en": "English"]
+//        print(data.compactMap { $0.value }.joined(separator: ", "))
+    }
+    
 }

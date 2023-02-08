@@ -3,18 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A341C532993D55E00ABFC10 /* CountriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A341C522993D55E00ABFC10 /* CountriesViewController.xib */; };
 		8B48E5412974FCB400316E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48E5402974FCB400316E9F /* AppDelegate.swift */; };
 		8B48E5432974FCB400316E9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48E5422974FCB400316E9F /* SceneDelegate.swift */; };
 		8B48E5452974FCB400316E9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48E5442974FCB400316E9F /* ViewController.swift */; };
 		8B48E5482974FCB400316E9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B48E5462974FCB400316E9F /* Main.storyboard */; };
 		8B48E54A2974FCB700316E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B48E5492974FCB700316E9F /* Assets.xcassets */; };
 		8B48E54D2974FCB700316E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B48E54B2974FCB700316E9F /* LaunchScreen.storyboard */; };
-		8B894D3A29820FEE003A5A43 /* Countries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B894D3929820FEE003A5A43 /* Countries.storyboard */; };
-		8B894D3C2982101E003A5A43 /* CoutriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894D3B2982101E003A5A43 /* CoutriesViewController.swift */; };
+		8B894D3C2982101E003A5A43 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894D3B2982101E003A5A43 /* CountriesViewController.swift */; };
 		8B894D3E29821341003A5A43 /* CountriesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894D3D29821341003A5A43 /* CountriesViewCell.swift */; };
 		8B894D4529822648003A5A43 /* DetailCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B894D4429822648003A5A43 /* DetailCountryViewController.swift */; };
 		8BCFFD85297F9D7600220C8C /* CountriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCFFD84297F9D7600220C8C /* CountriesAPI.swift */; };
@@ -27,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A341C522993D55E00ABFC10 /* CountriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesViewController.xib; sourceTree = "<group>"; };
 		8B48E53D2974FCB400316E9F /* CobaLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CobaLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B48E5402974FCB400316E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B48E5422974FCB400316E9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,8 +36,7 @@
 		8B48E5492974FCB700316E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B48E54C2974FCB700316E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B48E54E2974FCB700316E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B894D3929820FEE003A5A43 /* Countries.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Countries.storyboard; sourceTree = "<group>"; };
-		8B894D3B2982101E003A5A43 /* CoutriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoutriesViewController.swift; sourceTree = "<group>"; };
+		8B894D3B2982101E003A5A43 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
 		8B894D3D29821341003A5A43 /* CountriesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewCell.swift; sourceTree = "<group>"; };
 		8B894D4429822648003A5A43 /* DetailCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCountryViewController.swift; sourceTree = "<group>"; };
 		8BCFFD84297F9D7600220C8C /* CountriesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesAPI.swift; sourceTree = "<group>"; };
@@ -117,8 +117,8 @@
 		8B894D3829820F91003A5A43 /* CountriesView */ = {
 			isa = PBXGroup;
 			children = (
-				8B894D3B2982101E003A5A43 /* CoutriesViewController.swift */,
-				8B894D3929820FEE003A5A43 /* Countries.storyboard */,
+				3A341C522993D55E00ABFC10 /* CountriesViewController.xib */,
+				8B894D3B2982101E003A5A43 /* CountriesViewController.swift */,
 				8B894D3D29821341003A5A43 /* CountriesViewCell.swift */,
 				8BEE148E298CFE9400738A15 /* CountriesViewCell.xib */,
 			);
@@ -231,7 +231,7 @@
 				};
 			};
 			buildConfigurationList = 8B48E5382974FCB400316E9F /* Build configuration list for PBXProject "CobaLogin" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -256,9 +256,9 @@
 				8BEE148F298CFE9400738A15 /* CountriesViewCell.xib in Resources */,
 				8B48E54D2974FCB700316E9F /* LaunchScreen.storyboard in Resources */,
 				8B48E54A2974FCB700316E9F /* Assets.xcassets in Resources */,
+				3A341C532993D55E00ABFC10 /* CountriesViewController.xib in Resources */,
 				8B48E5482974FCB400316E9F /* Main.storyboard in Resources */,
 				8BDCD8002991E5550056A57B /* DetailCountry.storyboard in Resources */,
-				8B894D3A29820FEE003A5A43 /* Countries.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +316,7 @@
 				8BF6DDE029752FFD00DAE3D2 /* LoginViewModel.swift in Sources */,
 				8BE4C171298369330097CB9E /* CountriesViewModel.swift in Sources */,
 				8B48E5452974FCB400316E9F /* ViewController.swift in Sources */,
-				8B894D3C2982101E003A5A43 /* CoutriesViewController.swift in Sources */,
+				8B894D3C2982101E003A5A43 /* CountriesViewController.swift in Sources */,
 				8B48E5412974FCB400316E9F /* AppDelegate.swift in Sources */,
 				8BCFFD87297FB42D00220C8C /* Countries.swift in Sources */,
 				8B894D3E29821341003A5A43 /* CountriesViewCell.swift in Sources */,
@@ -473,7 +473,6 @@
 				INFOPLIST_FILE = CobaLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
@@ -503,7 +502,6 @@
 				INFOPLIST_FILE = CobaLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;

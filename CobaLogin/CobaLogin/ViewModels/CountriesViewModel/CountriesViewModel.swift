@@ -6,32 +6,49 @@
 //
 
 import Foundation
+import RxSwift
+import RxRelay
 
 class CountriesViewModel {
-    var countries: [Countries] = []
+    let countryList: BehaviorRelay<[Countries]> = BehaviorRelay<[Countries]>(value: [])
+    let isLoading: BehaviorRelay<Bool> = BehaviorRelay<Bool>(value: false)
+//    var countries: [Countries] = []
     
-    func fetch(completion: @escaping () -> ()) {
-        CountriesAPI.fetchData { countries in
-            self.countries = countries
-            dump(self.countries)
-            DispatchQueue.main.async
-            {
-                self.countries.sort(by: {$0.name?.common ?? "" < $1.name?.common ?? ""})
+    func fetchCountries(completion: @escaping (Error?) -> Void) {
+        isLoading.accept(true)
+        CountriesAPI.shared.fetchCountries { [weak self] (result) in
+            switch result {
+            case .success(let countries):
+                self?.isLoading.accept(false)
+                self?.countryList.accept(countries)
+                completion(nil)
+                
+            case .failure(let error):
+                completion(error)
             }
-            completion()
         }
     }
     
+    
+//    func fetch(completion: @escaping () -> ()) {
+//        CountriesAPI.shared.fetchData { countries in
+//            self.countries = countries
+//            dump(self.countries)
+//            self.countries.sort(by: {$0.name?.common ?? "" < $1.name?.common ?? ""})
+//            completion()
+//        }
+//    }
+    
     func numberOrRows() -> Int {
-        return self.countries.count
+        return self.countryList.value.count
     }
     
     func countryName(at index: Int) -> String? {
-        return self.countries[index].name?.common
+        return self.countryList.value[index].name?.common
     }
     
     func countryFlag(at index: Int) -> String? {
-        return self.countries[index].flags.png!
+        return self.countryList.value[index].flags.png!
     }
     
 //    func countryCapital(at index: Int) -> String? {
